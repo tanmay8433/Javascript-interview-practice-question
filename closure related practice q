@@ -1,0 +1,20 @@
+//can you guesss the output 
+const myglobal=100;
+function func(){
+    const myvar=1;
+    const myname="ajay suneha";
+    console.log(myglobal,myname)
+    
+    function inneroffunc(){
+        const myInnnerVar=2;
+        const myyoutubechannel="technical suneja"
+        console.log(myvar,myglobal);
+        
+        function innerofinneroffunc(){
+            console.log(myInnnerVar,myvar,myglobal,myyoutubechannel);
+        }
+   innerofinneroffunc()
+    }
+    inneroffunc()
+}
+func()
